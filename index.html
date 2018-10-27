@@ -2,56 +2,43 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Elena</title>
+	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/fonts.css">
 </head>
 <body>
 	<div class="wrapper">
-		<div class="head">
-			<header>
-				<div class="elena">
-					<a href="#" class="a-elena">Elena</a>
-				</div>
-				<nav>
-					<ul class="nav-ul">
-						<li class="nav-li"><a href="#" class="nav-li-a">home</a></li>
-						<li class="nav-li"><a href="#" class="nav-li-a">services</a></li>
-						<li class="nav-li"><a href="#" class="nav-li-a">features</a></li>
-						<li class="nav-li"><a href="#" class="nav-li-a">contact</a></li>
-					</ul>
-				</nav>
-				<div class="good-day">
+		<div class="signup-h1"><h1 class="h1"><span class="span">Signup</span> Form</h1></div>
+		<div class="my-form">
+			<div class="my-form-center">		
+				<form id="form1" action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+					<div class="first-last-name">
+						<input class="first-name input" name="surname" type="text" placeholder="First Name">
+						<input class="last-name input" name="last-name" type="text" placeholder="Last Name">
+					</div>
+					<div class="input-box">
+						<input class="username input" name="username" type="text" placeholder="Username">
+					</div>
+					<div class="input-box">
+						<input class="email input" name="email" type="email" placeholder="Email Addres">
+					</div>
+					<div class="input-box">
+						<input class="password input" name="password" type="password" placeholder="Password">
+					</div>
+					<div class="input-box">
+						<input class="checkbox" name="checkbox" type="checkbox" id="checkbox">
+						<label class="text-p" for="checkbox">I Agree to the <a class="link" href="#">terms of use</a></label>
+					</div>
+					<div class="button-box box">
+						<button class="button" type="submit" value="Submit">Sign Up</button>
+					</div>
 					<div>
-						<h1 class="good-day-h1">heve a good day</h1>
+						<p class="text-p box">Have an account with us? <a class="link" href="#">Login here</a></p>
 					</div>
-					<div class="just-for-you">
-						<p class="just-for-you-p">just for you on themeforest</p>
+					<div>						
+						<p class="overflow text-p box">More info about us here More info about us here</p>
 					</div>
-					<div class="get-your-copy">
-						<a href="#" class="get-your-copy-a">get your copy now</a>
-					</div>				
-				</div>
-			</header>
-		</div>
-		<div class="advantages">
-			<section>
-				<div class="profesionals">
-					<img src="images/profesionals.png" alt="profesional icon">
-					<p class="profesionals-p">profesionals</p>
-					<p class="profesionals-second-p">Lorem ipsum dolor sit amet consectetur elit.</p>
-				</div>
-				<div class="amateours">
-					<img src="images/amateurs.png" alt="profesional icon">
-					<p class="amateours-p">amateours</p>
-					<p class="amateours-second-p">Lorem ipsum dolor sit amet consectetur elit.</p>
-				</div>
-				<div class="for-everyone">
-					<img src="images/foreveryone.png" alt="profesional icon">
-					<p class="for-everyone-p">for everyone</p>
-					<p class="for-everyone-second-p">Lorem ipsum dolor sit amet consectetur elit.</p>
-				</div>
-			</section>
+				</form>
+			</div>	
 		</div>
 	</div>
 </body>
